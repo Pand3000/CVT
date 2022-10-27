@@ -1,0 +1,436 @@
+.wrapper{
+  position: relative;
+}
+
+.conteiner{
+  position: relative;
+  width: 1180px;
+  margin: 0 auto;
+  height: 100%;
+  font-family: 'Rubik', sans-serif;
+  padding-top: 32px;
+}
+
+/* Шапка сайта */
+.header{
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.header__search{
+  
+  border: none;
+  border-bottom: 1px solid #333333;;
+  width: 320px;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.header__search:focus{
+  outline: none;
+  font-weight: 500;  
+}
+
+.header__search-btn{
+  border: none;
+  color: red; 
+  background-color: white;
+  font-family: 'Rubik',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.header__login{
+  border: none;
+  background-color: #E5261E;
+  border-radius: 4px;
+  Width: 113px;
+  Height:38px;
+  color: white;
+  font-family: 'Rubik',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+
+.header__login:hover{
+  background-color: #CC221B;
+}
+
+
+.change{
+  display: flex;
+  justify-content: center;
+  padding-top: 116px;
+  padding-bottom: 9px;  
+}
+
+.change__films{
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: right;
+  color:  #333333;
+}
+
+.change__chanels{
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: right;
+  color:  #333333;
+  margin: 0 0 0 24px;
+}
+
+.change__films:hover{
+  color: #E5261E;
+  text-decoration: underline;
+}
+
+.change__chanels:hover{
+  color: #E5261E;
+  text-decoration: underline;
+}
+
+
+/* Блок новинок */
+.categories{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #333333;
+  margin: 32px 0px 16px 0px;
+}
+
+.new {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.new__figure {
+  position: relative;
+  width: 280px; 
+}
+
+.kitty{
+  border-radius: 8px;
+  position: relative;
+}
+
+.bat{
+  border-radius: 8px;
+  position: relative;
+}
+
+.holly{
+  position: relative;
+}
+
+.strip{
+  border-radius: 8px;
+  position: relative;
+}
+
+.description{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #333333;
+  z-index: 999;
+  height: 338px;
+  width: 248px;
+  border-radius: 8px;
+  padding: 16px;
+  color: #F2F2F2;
+  line-height: 1.4;
+  opacity: 0;
+}
+
+.description:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+
+/* Название фильмов под карточкой */
+.title-film{
+  margin-top: 16px;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+}
+
+
+/* Блок жанров */
+.genres{
+  display: flex;
+  justify-content: space-between;
+}
+
+.comedy{
+  width: 280px;
+  height: 208px;
+  background: linear-gradient(to right, #F2C94C, #F29A4A);
+  text-align: center;
+  position: relative;
+  border-radius: 6px;
+  opacity: 0.8;
+}
+
+.drama{
+  width: 280px;
+  height: 208px;
+  background: linear-gradient(to right, #F2994A,  #EB5757);
+  text-align: center;
+  position: relative;
+  border-radius: 6px;
+  opacity: 0.8;
+}
+
+.fantastic{
+  width: 280px;
+  height: 208px;
+  background: linear-gradient(to right, #56CCF2, #2F80ED);
+  text-align: center;
+  position: relative;
+  border-radius: 6px;
+  opacity: 0.8;
+}
+
+.horror{
+  width: 280px;
+  height: 208px;
+  background: linear-gradient(to right, #828282, #333333);
+  text-align: center;
+  position: relative;
+  border-radius: 6px;
+  opacity: 0.8;
+}
+
+/*Ховеры жанров */
+.comedy:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.drama:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.fantastic:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.horror:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+.genres__icon{
+  position: absolute;
+  left: 38.43%;
+  right: 41.43%;
+  top: 38.46%;
+  bottom: 38.46%;
+
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 57px;
+  text-align: center;
+
+}
+
+.genres__title{
+  position: absolute;
+  width: 117px;
+  left: 28.64%;
+  right: 35%;
+  top: 76.92%;
+  bottom: 11.54%;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+
+/* СТИЛИ index-channels */
+
+.channels{
+  margin: 36px 0px ;
+  overflow-y: scroll;
+  height: 500px;
+  width: 1196px;
+}
+
+.channels::-webkit-scrollbar{
+  width: 8px;
+  background: #F2F2F2;
+  border-radius: 2px;
+  margin-left: 10px;
+  height: 500px;
+}
+
+.channels::-webkit-scrollbar-thumb {
+  background-color: #BDBDBD;
+  border-radius: 2px; 
+  border: 2px solid #F2F2F2;
+}
+
+
+.container-logo{
+  width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.hot-time{
+  color: red;
+}
+
+
+.channels__container{
+  background-color: #F2F2F2;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  height: 162px;
+  align-items: center;
+  margin-bottom: 16px;
+  width: 1180px;
+}
+
+
+.channels__container-4{
+  background-color: #F2F2F2;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  height: 162px;
+  align-items: center;
+  width: 1180px;
+}
+
+
+.channels__container:last-child{
+  margin: 100px;
+}
+
+
+.channels__title{
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+  margin: 21px 0 17px 0; 
+}
+
+.channels__content{
+  line-height: 28px;
+  height: 100%;
+}
+
+.channels__timetable{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333333;
+}
+
+
+/* Подвал */
+.footer{
+  margin-top: 81px;
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  background: #F2F2F2;
+}
+
+
+.footer__content{
+  margin: 22px 361.5px 28px 361.5px;
+}
+
+.footer__logo{
+  float: left;
+  margin-right: 40px;
+}
+
+.address{
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.home-page{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1F4766;
+  text-decoration: none;
+}
+
+@media (max-width: 390px) {
+
+.conteiner{
+ width: 100%;
+}
+
+.header{
+  flex-direction: column;
+}
+
+.new{
+  flex-direction: column;
+}
+
+.genres{
+  flex-direction: column;
+}
+}
+
